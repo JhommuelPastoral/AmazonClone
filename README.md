@@ -1,0 +1,2 @@
+# AmazonClone
+Ama

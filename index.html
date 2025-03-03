@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon</title>
+  <link rel="stylesheet" href="./styles/sharedStyles/header.css">
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+  
+  <header>
+
+    <div class="pcViewContainer">
+      <a href="index.html">
+        <div class="leftHeaderSection">
+          <img src="./images/amazon-logo-white.png" class="amazonLogo">
+          <img src="./images/amazon-mobile-logo-white.png" class="amazonMobileLogo">
+        </div>
+      </a>
+      <div class="middleHeaderSection">
+        <input type="text" class="textInput" placeholder="Search">
+        <button class="searchButton">
+          <img src="/images/icons/search-icon.png" class="searchIcon">
+        </button>
+      </div>
+      <div class="rightHeaderSection">
+        <a href="return.html">
+          <div class="returnContainer">
+            <p>Returns</p>
+            <p>& Orders</p>
+          </div>
+        </a>
+
+        <a href="checkout.html" class="checkOutLink">
+          <div class="cartContainer">
+            <div class="imageContainer">
+              <img src="./images/icons/cart-icon.png" class="cartIcon">
+              <p class="cartQuantity"> 0 </p>
+            </div>
+            <p >Cart</p>
+          </div>
+        </a>
+        <div class="hambugerSection">
+          <img src="./images/icons/hamburger-menu.png" class="hambugerMenu">
+        </div>
+      </div>
+    </div>
+
+      <div class="mobileViewContainer">
+        <a href="return.html"><p>Return & Orders</p></a>
+        <a href="checkout.html"><p>Cart(<span class="mobileCartQuantity">0</span>)</p></a>
+      </div>
+
+  </header>
+  <main> 
+    <div class="orderGrid">
+      <!-- Order Container -->
+    </div>
+
+
+  </main>
+
+  <script type="module" src="./script/products.js"></script>
+  <script type="module" src="./script/home.js"></script>
+</body>
+</html>

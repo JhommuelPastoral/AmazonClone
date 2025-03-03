@@ -1,0 +1,144 @@
+body{
+  padding-top: 70px;
+}
+
+main{
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.orderHeader p{
+  font-weight: bold;
+  font-size: 24px;
+}
+.buyAgainContainer{
+  display: flex;
+  align-items: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.addedContainer{
+  display: none;
+  align-items: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.orderGrid{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(240,242,242);
+  border-radius: 10px;
+}
+.orderContainerHeader{
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr;
+  background-color: rgb(240,242,242);
+  padding: 10px;
+  border-top-left-radius:  10px;
+  border-top-right-radius:  10px;
+  font-size: 15px;
+}
+.headerLeftSection p,
+.headerMiddleSection p,
+.headerRightSection p{
+  margin: 0;
+  margin-bottom: 5px;
+
+}
+
+.orderDetails{
+  display: grid;
+  padding: 40px 10px 40px 10px;
+  grid-template-columns: 150px 1fr 1fr;
+  column-gap: 20px;
+}
+.productDetailsContainer p{
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.productDetailsContainer p:nth-of-type(1){
+  font-weight: bold;
+
+}
+.productImage{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.trackContainer{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+
+}
+.imageContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.trackButton{
+  width: 250px;
+  height: 40px;
+  font-family: Poppins;
+  background-color: transparent;
+  border: 1px solid #D5D9D9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  cursor: pointer;
+}
+.buyAgainButton{
+  width: 150px;
+  height: 40px;
+  background-color: rgb(247, 202, 0);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.buyAgainIcon{
+  width: 30px;
+}
+.orderMainContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media (max-width: 800px){
+  .orderContainerHeader{
+    grid-template-columns: 1fr;
+
+  }
+  .headerLeftSection ,
+  .headerMiddleSection ,
+  .headerRightSection{
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+    font-size: 14px;
+  } 
+  .orderDetails{
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  main{
+    max-width: 350px;
+  }
+  .productImage{
+    width: 80%;
+    height: 80%;
+  }
+  .trackButton,.buyAgainButton{
+    width: 100%;
+  }
+}

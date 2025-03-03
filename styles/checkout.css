@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  margin: 0;
+  font-family: Poppins;
+}
+
+
+header{
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.leftSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amazonLogo{
+  width: 100px;
+}
+.amazonMobileLogo{
+  width: 30px;
+  display: none;
+}
+
+/*Middle Section */
+.middleSection{
+  font-size: 20px;
+}
+.middleSection p{
+  margin: 0;
+}
+.middleSection span:nth-of-type(1){
+  color: rgb(0, 113, 133);
+}
+
+@media (max-width:1000px) {
+  header{
+    max-width: 550px;
+  }
+  .amazonLogo{
+    display: none;
+  }
+  .amazonMobileLogo{
+    display: block;
+  }
+}
+
+
+/* Main Section */
+
+
+main{
+  max-width: 1100px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.orderHeader{
+  font-size: 20px;
+  font-weight: 500;
+}
+.orderGrid{
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+/* To Be updated */
+.orderContainer,
+.orderSummary{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.orderContainer,
+.orderSummary{
+  padding: 20px 10px 20px 10px;
+}
+.orderSummary{
+  align-self: start;
+}
+
+
+.headerOrderContainer{
+  color: green;
+  font-weight: 500;
+}
+.headerOrderContainer p{
+  margin: 0;
+}
+.orderDetails{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 30px;
+}
+.productImage{
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.itemDetail p{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.deliveryOption p{
+  margin: 0;
+}
+
+.option1{
+  display: grid;
+  grid-template-columns: 20px auto;
+  column-gap: 10px;
+}
+.date p{
+  margin: 0;
+}
+.date > p:nth-of-type(1){
+  color: green;
+}
+.date > p:nth-of-type(2){
+  color: gray;
+  font-size: 14px;
+}
+
+input[type = "radio"]{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid blue;
+
+}
+
+.orderSummaryDetails{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.orderHeaderSummary{
+  margin: 0;
+  font-weight: bold;
+}
+.orderSummaryLeft{
+  font-size: 14px;
+}
+.orderSummaryDetails{
+  border-bottom: 1px solid lightgray;
+
+}
+
+.orderSummaryRight p{
+  text-align: end;
+  font-size: 14px;
+}
+.orderTotal{
+  display: flex;
+  justify-content: space-between;
+}
+.orderTotal p{
+  color: rgb(215, 4, 4);
+  margin: 5;
+  font-weight: bold;
+}
+.orderButton{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: rgb(255,216,20);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+  cursor: pointer;
+}
+.orderMainContainer{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.updateQuantity,
+.deleteProduct{
+  cursor: pointer;
+  color: #017cb6;
+}
+.updateQuantityNumber{
+  display: none;
+  width: 40px;
+  font-family: Poppins;
+  font-size: 16px;
+}
+.viewProductsButton{
+  background-color: rgb(255,216,20);
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+.delelteUpdate{
+  text-decoration: none;
+}
+
+@media (max-width:1000px) {
+  main{
+    max-width: 550px;
+  }
+  .orderDetails{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+      "imageContainer itemDetail"
+      "deliveryOption deliveryOption";
+  }
+  .orderGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .orderSummary{
+    order: 1;
+  }
+  .orderMainContainer{
+    order: 2;
+  }
+  .imageContainer{
+    grid-area: imageContainer;
+  }
+  .itemDetail{
+    grid-area: itemDetail;
+  }
+  .deliveryOption{
+    grid-area: deliveryOption;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Out</title>
+  <link rel="stylesheet" href="./styles/checkout.css">
+</head>
+<body>
+  <header>  
+    <a href="index.html">
+      <div class="leftSection">
+        <img src="./images/amazon-logo.png" class="amazonLogo">
+        <img src="./images/amazon-mobile-logo.png" class="amazonMobileLogo">
+      </div>
+    </a>
+    <div class="middleSection">
+      <p>Checkout(<span><span class="cartQuantity">0</span> items </span>)</p>
+    </div>
+    <div class="rightSection">
+      <img src="./images/icons/checkout-lock-icon.png" alt="">
+    </div>
+  </header>
+
+
+  <main>
+    <div class="orderHeader"> 
+      <p> Review your order</p>
+    </div>
+    <div class="orderGrid">
+
+      <div class="orderMainContainer">
+        <!-- Order Cart Added Here <3--> 
+          <div class="noOrderContainer">
+            <p>Your cart is empty.</p>
+            <a href="index.html">            
+              <button class="viewProductsButton"> View Products</button>
+            </a>
+          </div>
+          
+      </div>
+
+
+
+
+      <div class="orderSummary">
+         <p class="orderHeaderSummary">
+          Order Summary
+         </p> 
+         <div class="orderSummaryDetails">
+            <div class="orderSummaryLeft">
+              <p>Items (<span class="itemQuantity"> 0 </span>):</p>
+              <p>Shipping & handling:</p>
+              <p>Total before tax:</p>
+              <p>Estimated tax (10%):</p>
+            </div>
+            <div class="orderSummaryRight">
+              <p class="allItemCost">$0.00</p>
+              <p class="allShippingCost">$0.00</p>
+              <p class="totalTax">$0.00</p>
+              <p class="estimatedTax">$0.00</p>
+            </div>
+          </div>
+
+          <div class="orderTotal">
+            <div class="orderTotalLeft">
+              <p>Order total:</p>
+            </div>
+            <div class="orderTotalRight">
+              <p class="totalCost">$0.00</p>
+            </div>
+         </div>
+         
+         <div class="buttonContainer">
+
+            <button class="orderButton">Place Your Order </button>
+
+         </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <script type="module" src="./script/checkout.js"> </script>
+
+</body>
+</html>
